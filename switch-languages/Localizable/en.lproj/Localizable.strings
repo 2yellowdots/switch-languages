@@ -1,0 +1,18 @@
+/* 
+  Localizable.strings
+  switch-languages
+
+  Created by Andrew Fletcher on 3/11/20.
+  
+*/
+
+// Headers
+"HeaderSettings" = "Settings";
+
+// Home page
+"Settings" = "settings";
+
+// Settings page
+"SettingsLanguage" = "Language";
+"SettingsDemoText" = "Change the language of the app now you have the app language changing at the flick of a switch";
+

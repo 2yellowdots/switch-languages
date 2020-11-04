@@ -1,0 +1,18 @@
+
+/* Class = "UITextField"; text = "settings"; ObjectID = "Mu7-01-OTy"; */
+"Mu7-01-OTy.text" = "settings";
+
+/* Class = "UILabel"; text = "Language"; ObjectID = "NjW-26-PGU"; */
+"NjW-26-PGU.text" = "Language";
+
+/* Class = "UIButton"; normalTitle = "<"; ObjectID = "g4s-mA-avu"; */
+"g4s-mA-avu.normalTitle" = "<";
+
+/* Class = "UIButton"; normalTitle = "Language"; ObjectID = "jN0-yZ-bsf"; */
+"jN0-yZ-bsf.normalTitle" = "Language";
+
+/* Class = "UILabel"; text = "Change the language of the app now you have the app language changing at the flick of a switch"; ObjectID = "u0s-8e-238"; */
+"u0s-8e-238.text" = "Change the language of the app now you have the app language changing at the flick of a switch";
+
+/* Class = "UIButton"; normalTitle = "settings"; ObjectID = "xRt-bL-A9F"; */
+"xRt-bL-A9F.normalTitle" = "settings";

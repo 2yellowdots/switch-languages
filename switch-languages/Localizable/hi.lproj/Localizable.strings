@@ -1,0 +1,18 @@
+/* 
+  Localizable.strings
+  switch-languages
+
+  Created by Andrew Fletcher on 3/11/20.
+  
+*/
+
+// Headers
+"HeaderSettings" = "समायोजन";
+
+// Home page
+"Settings" = "समायोजन";
+
+// Settings page
+"SettingsLanguage" = "भाषा: हिन्दी";
+"SettingsDemoText" = "ऐप की भाषा बदलें अब आपके पास स्विच के फ्लिक पर ऐप की भाषा बदल रही है";
+

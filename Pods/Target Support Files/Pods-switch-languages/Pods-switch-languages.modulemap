@@ -1,0 +1,6 @@
+framework module Pods_switch_languages {
+  umbrella header "Pods-switch-languages-umbrella.h"
+
+  export *
+  module * { export * }
+}

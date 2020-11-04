@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="6HP-t2-8L7">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="NotoSansTC-Light.otf">
+            <string>NotoSansTC-Light</string>
+        </array>
+        <array key="NotoSansTC-Regular.otf">
+            <string>NotoSansTC-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Home View Controller-->
+        <scene sceneID="PXB-Hu-tRN">
+            <objects>
+                <viewController id="6HP-t2-8L7" customClass="HomeViewController" customModule="switch_languages" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kbe-Jt-Dra">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xRt-bL-A9F">
+                                <rect key="frame" x="223" y="201" width="141" height="72"/>
+                                <fontDescription key="fontDescription" name="NotoSansTC-Light" family="Noto Sans TC" pointSize="40"/>
+                                <state key="normal" title="settings">
+                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="enterSettings:" destination="6HP-t2-8L7" eventType="touchUpInside" id="tAz-PT-dwX"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ozl-iy-qOc"/>
+                        <color key="backgroundColor" red="0.66422420739999999" green="0.66424006219999998" blue="0.66423153879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="xRt-bL-A9F" firstAttribute="top" secondItem="kbe-Jt-Dra" secondAttribute="top" constant="201" id="LKk-bw-OgD"/>
+                            <constraint firstItem="xRt-bL-A9F" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="kbe-Jt-Dra" secondAttribute="leadingMargin" id="UEE-VA-wqD"/>
+                            <constraint firstAttribute="trailing" secondItem="xRt-bL-A9F" secondAttribute="trailing" constant="50" id="aNf-Fv-FJt"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="XNu-Ag-w6V"/>
+                    <connections>
+                        <outlet property="settingsBtn" destination="xRt-bL-A9F" id="tlV-v4-gfn"/>
+                        <segue destination="h9r-A8-b4R" kind="show" identifier="goToSettings" id="Ute-NH-kaP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VTB-jL-TFR" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1624.6376811594205" y="33.482142857142854"/>
+        </scene>
+        <!--Settings View Controller-->
+        <scene sceneID="tcv-XH-ogm">
+            <objects>
+                <viewController id="h9r-A8-b4R" customClass="SettingsViewController" customModule="switch_languages" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="MkM-GR-6rE">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="settings" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Mu7-01-OTy">
+                                <rect key="frame" x="130.56346749225986" y="40" width="149.99999999999977" height="29.999999999999943"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="NotoSansTC-Light" family="Noto Sans TC" pointSize="25"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" reversesTitleShadowWhenHighlighted="YES" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g4s-mA-avu">
+                                <rect key="frame" x="21" y="37" width="30" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="NotoSansTC-Regular" family="Noto Sans TC" pointSize="20"/>
+                                <state key="normal" title="&lt;">
+                                    <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="headHome:" destination="h9r-A8-b4R" eventType="touchUpInside" id="99O-Ml-7LU"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jN0-yZ-bsf" customClass="DropButton" customModule="switch_languages" customModuleProvider="target">
+                                <rect key="frame" x="42" y="224" width="240" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="KJr-9Y-9IZ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="NotoSansTC-Regular" family="Noto Sans TC" pointSize="18"/>
+                                <state key="normal" title="Language">
+                                    <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="chooseLanguage:" destination="h9r-A8-b4R" eventType="touchUpInside" id="lx7-uS-Gl6"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Language" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NjW-26-PGU">
+                                <rect key="frame" x="42" y="192" width="79.5" height="27"/>
+                                <fontDescription key="fontDescription" name="NotoSansTC-Light" family="Noto Sans TC" pointSize="18"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Change the language of the app now you have the app language changing at the flick of a switch" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u0s-8e-238">
+                                <rect key="frame" x="42" y="286" width="330" height="131"/>
+                                <fontDescription key="fontDescription" name="NotoSansTC-Regular" family="Noto Sans TC" pointSize="18"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="LuJ-eG-sLJ"/>
+                        <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="LuJ-eG-sLJ" firstAttribute="trailing" secondItem="u0s-8e-238" secondAttribute="trailing" constant="42" id="3QV-Sb-otl"/>
+                            <constraint firstItem="LuJ-eG-sLJ" firstAttribute="bottom" secondItem="jN0-yZ-bsf" secondAttribute="bottom" constant="544" id="4SL-cg-kpS"/>
+                            <constraint firstItem="u0s-8e-238" firstAttribute="leading" secondItem="jN0-yZ-bsf" secondAttribute="leading" id="9DM-CT-v4H"/>
+                            <constraint firstItem="jN0-yZ-bsf" firstAttribute="leading" secondItem="LuJ-eG-sLJ" secondAttribute="leading" constant="42" id="G7e-As-Ocr"/>
+                            <constraint firstItem="jN0-yZ-bsf" firstAttribute="top" secondItem="NjW-26-PGU" secondAttribute="bottom" constant="5" id="IBF-Ut-AeG"/>
+                            <constraint firstItem="LuJ-eG-sLJ" firstAttribute="bottom" secondItem="u0s-8e-238" secondAttribute="bottom" constant="391" id="KaM-Qt-a6K"/>
+                            <constraint firstItem="LuJ-eG-sLJ" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="NjW-26-PGU" secondAttribute="trailing" symbolic="YES" id="gKA-OT-1MI"/>
+                            <constraint firstItem="jN0-yZ-bsf" firstAttribute="leading" secondItem="NjW-26-PGU" secondAttribute="leading" id="gVO-22-OfT"/>
+                            <constraint firstItem="u0s-8e-238" firstAttribute="top" secondItem="jN0-yZ-bsf" secondAttribute="bottom" constant="22" id="ggo-b0-Y7Y"/>
+                            <constraint firstItem="LuJ-eG-sLJ" firstAttribute="trailing" secondItem="jN0-yZ-bsf" secondAttribute="trailing" constant="132" id="ztd-Ar-MTO"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="81c-Xm-gaJ"/>
+                    <connections>
+                        <outlet property="demoLbl" destination="u0s-8e-238" id="ZCo-Lo-Nny"/>
+                        <outlet property="languageBtn" destination="jN0-yZ-bsf" id="EEH-VF-9b1"/>
+                        <outlet property="languageLbl" destination="NjW-26-PGU" id="J9Y-qs-Wn5"/>
+                        <outlet property="screenHeader" destination="Mu7-01-OTy" id="Wbh-RI-7MG"/>
+                        <segue destination="6HP-t2-8L7" kind="show" identifier="goHome" id="p0A-hT-dpO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="z8T-8s-vzt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2566.666666666667" y="32.8125"/>
+        </scene>
+    </scenes>
+</document>
