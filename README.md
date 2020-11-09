@@ -5,7 +5,7 @@
 <div align="center">
   <img src="images/screen-images-01.jpg" width="30%" height="30%">
   <img src="images/画面-画像-01.jpg" width="30%" height="30%">
-  <img src="images/images-écrans-02.jpg" width="30%" height="30%">
+  <img src="images/изображения-экрана-02.jpg" width="30%" height="30%">
 </div>
 
 

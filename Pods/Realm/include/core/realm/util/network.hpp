@@ -1257,11 +1257,10 @@ public:
     /// \param sock This is the local socket, that upon successful completion
     /// will have become connected to the remote socket. It must be in the
     /// closed state (Socket::is_open()) when async_accept() is called.
-    ///
-    /// \param ep Upon completion, the remote peer endpoint will have been
-    /// assigned to this variable.
     template <class H>
     void async_accept(Socket& sock, H handler);
+    /// \param ep Upon completion, the remote peer endpoint will have been
+    /// assigned to this variable.
     template <class H>
     void async_accept(Socket& sock, Endpoint& ep, H handler);
     /// @}
