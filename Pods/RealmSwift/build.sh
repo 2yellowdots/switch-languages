@@ -927,6 +927,9 @@ case "$COMMAND" in
         sh build.sh test-ios-swift-cocoapods
         sh build.sh test-osx-objc-cocoapods
         sh build.sh test-osx-swift-cocoapods
+        sh build.sh test-catalyst-objc-cocoapods
+        sh build.sh test-catalyst-objc-cocoapods-dynamic
+        sh build.sh test-catalyst-swift-cocoapods
         sh build.sh test-watchos-objc-cocoapods
         sh build.sh test-watchos-swift-cocoapods
         ;;
@@ -1555,7 +1558,7 @@ x.y.z Release notes (yyyy-MM-dd)
 ### Compatibility
 * Realm Studio: 10.0.0 or later.
 * APIs are backwards compatible with all previous releases in the 10.x.y series.
-* Carthage release for Swift is built with Xcode 12.1.
+* Carthage release for Swift is built with Xcode 12.2.
 * CocoaPods: 1.10 or later.
 
 ### Internal

@@ -1,10 +1,10 @@
 PODS:
   - DropDown (2.3.13)
-  - Realm (10.1.2):
-    - Realm/Headers (= 10.1.2)
-  - Realm/Headers (10.1.2)
-  - RealmSwift (10.1.2):
-    - Realm (= 10.1.2)
+  - Realm (10.1.4):
+    - Realm/Headers (= 10.1.4)
+  - Realm/Headers (10.1.4)
+  - RealmSwift (10.1.4):
+    - Realm (= 10.1.4)
 
 DEPENDENCIES:
   - DropDown
@@ -18,8 +18,8 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   DropDown: 8a2116376c1981888557f72ec2ffc9a5e0e456ec
-  Realm: 031fdd4be7094d01b43af1a5e49766ab644bb800
-  RealmSwift: 43cf2e114baa9d17d34eb81e7d0def31f21cd444
+  Realm: 80f4fb2971ccb9adc27a47d0955ae8e533a7030b
+  RealmSwift: 0e566ca714edb377bba8ea0811eafcea0b93734e
 
 PODFILE CHECKSUM: 2283c7590b2d2e55cebd9d8138f17b460c737387
 
